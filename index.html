@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Browser extensions manager UI</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body  onload="loadData()">
+    <div class="logo">
+      <img
+        class="logo-img"
+        src="/browser-extensions-manager-ui-main/assets/images/logo.svg"
+      />
+      <div class="sun-div">
+        <img
+          src="/browser-extensions-manager-ui-main//assets/images/icon-sun.svg"
+        />
+      </div>
+    </div>
+    <div class="top">
+      <div class="extention-list"><p>Extensions List</p></div>
+
+      <div class="buttons">
+        <button onclick="statusUpdate(event)" class="active border">All</button>
+        <button onclick="statusUpdate(event)" class=" active-button border">Active</button>
+        <button onclick="statusUpdate(event)" class="inactive-button border">Inactive</button>
+      </div>
+    </div>
+    <div class="container">
+      <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
+      <div class="extention border">
+        <div class="main">
+          <img
+            src="/browser-extensions-manager-ui-main/assets/images/logo-devlens.svg"
+          />
+          <div class="content">
+            <p class="devlens"><b>DevLens</b></p>
+            <p class="para">
+              Quickly inspect page layouts and visualize element boundaries.
+            </p>
+          </div>
+        </div>
+        <button class="remove border">Remove</button>
+        <div class="switch-div">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="extention border">
+        <div class="main">
+          <img
+            src="/browser-extensions-manager-ui-main/assets/images/logo-devlens.svg"
+          />
+          <div class="content">
+            <p class="devlens"><b>DevLens</b></p>
+            <p class="para">
+              Quickly inspect page layouts and visualize element boundaries.
+            </p>
+          </div>
+        </div>
+        <button class="remove border">Remove</button>
+        <div class="switch-div">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="extention border">
+        <div class="main">
+          <img
+            src="/browser-extensions-manager-ui-main/assets/images/logo-devlens.svg"
+          />
+          <div class="content">
+            <p class="devlens"><b>DevLens</b></p>
+            <p class="para">
+              Quickly inspect page layouts and visualize element boundaries.
+            </p>
+          </div>
+        </div>
+        <button class="remove border">Remove</button>
+        <div class="switch-div">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="extention border">
+        <div class="main">
+          <img
+            src="/browser-extensions-manager-ui-main/assets/images/logo-devlens.svg"
+          />
+          <div class="content">
+            <p class="devlens"><b>DevLens</b></p>
+            <p class="para">
+              Quickly inspect page layouts and visualize element boundaries.
+            </p>
+          </div>
+        </div>
+        <button class="remove border">Remove</button>
+        <div class="switch-div">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="extention border">
+        <div class="main">
+          <img
+            src="/browser-extensions-manager-ui-main/assets/images/logo-devlens.svg"
+          />
+          <div class="content">
+            <p class="devlens"><b>DevLens</b></p>
+            <p class="para">
+              Quickly inspect page layouts and visualize element boundaries.
+            </p>
+          </div>
+        </div>
+        <button class="remove border">Remove</button>
+        <div class="switch-div">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- Remove StyleSpy Instantly analyze and copy CSS from any webpage element.
+    Remove SpeedBoost Optimizes browser resource usage to accelerate page
+    loading. Remove JSONWizard Formats, validates, and prettifies JSON responses
+    in-browser. Remove TabMaster Pro Organizes browser tabs into groups and
+    sessions. Remove ViewportBuddy Simulates various screen resolutions directly
+    within the browser. Remove Markup Notes Enables annotation and notes
+    directly onto webpages for collaborative debugging. Remove GridGuides
+    Overlay customizable grids and alignment guides on any webpage. Remove
+    Palette Picker Instantly extracts color palettes from any webpage. Remove
+    LinkChecker Scans and highlights broken links on any page. Remove DOM
+    Snapshot Capture and export DOM structures quickly. Remove ConsolePlus
+    Enhanced developer console with advanced filtering and logging. Remove -->
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

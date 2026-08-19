@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+@media (width>=375px){
+.container{
+    display: grid;
+    /* flex-wrap: wrap; */
+    grid-template-columns:1fr 1fr 1fr;
+    gap:10px;
+}
+.top{
+    display: flex;
+    justify-content: space-between  ;
+    background-color: transparent;
+    align-items: center;
+}
+.extention {
+    /* width:33%; */
+}
+}
+
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    background: linear-gradient(180deg, #040918 0%, #091540 100%);
+    font-family: "Noto Sans";
+}
+
+.border {
+    border: 1px solid rgba(255, 255, 255, 30%)
+}
+
+div,
+button {
+    background-color: hsl(226, 25%, 17%);
+    border-radius: 20px;
+    border-color: aliceblue;
+    color: hsl(0, 0%, 93%);
+    padding: 10px;
+}
+
+.logo {
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-img {
+    filter: invert(1);
+}
+
+.sun-div {
+    background-color: hsl(225, 23%, 24%);
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.extention-list {
+    text-align: center;
+    background-color: transparent;
+    font-size: 25px;
+    background-color: (200, 60%, 99%);
+    color: hsl(0, 0%, 93%);
+    margin-bottom: 0%;
+    padding: 0%;
+    font-weight: 600;
+}
+
+.buttons {
+    background-color: transparent;
+    text-align: center;
+    font-size: 18px;
+    padding: 0%;
+    margin-bottom: 10px;
+}
+
+.buttons button {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.remove {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 10px;
+}
+
+.main {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.devlens {
+    font-size: 16px;
+    padding: 0%;
+}
+
+.para {
+    font-size: 12px;
+    font-weight: 100px;
+    margin: 0%;
+    color: hsl(0, 0%, 78%);
+}
+
+.switch {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+}
+
+.extention {
+    position: relative;
+    padding: 20px;
+}
+
+.container {
+    padding: 0%;
+    background-color: transparent;
+
+}
+
+.active {
+    background-color: hsl(3, 71%, 56%);
+    color: #040918;
+}
+
+.switch-div {
+    position: absolute;
+    right: 2%;
+    bottom: 5%;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: hsl(3, 86%, 64%);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(12px);
+    -ms-transform: translateX(12px);
+    transform: translateX(12px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
