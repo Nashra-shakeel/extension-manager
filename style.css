@@ -3,22 +3,29 @@
 * {
     box-sizing: border-box;
 }
-@media (width>=375px){
-.container{
-    display: grid;
-    /* flex-wrap: wrap; */
-    grid-template-columns:1fr 1fr 1fr;
-    gap:10px;
+
+@media (width>=500px) {
+
+    .container {
+
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        background-color: transparent;
+        align-items: center;
+    }
+
+    .extention {}
 }
-.top{
-    display: flex;
-    justify-content: space-between  ;
+
+.top {
     background-color: transparent;
-    align-items: center;
-}
-.extention {
-    /* width:33%; */
-}
 }
 
 .attribution {
@@ -127,11 +134,15 @@ button {
 .extention {
     position: relative;
     padding: 20px;
+    /* gap: 10px; */
+
 }
 
 .container {
     padding: 0%;
     background-color: transparent;
+    display: grid;
+    gap: 10px;
 
 }
 
