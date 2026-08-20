@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-primary: rgba(255, 255, 255, 30%);
+    --color-secondary: hsl(225, 23%, 24%);
+    --color-bg-light: #091540;
+    --color-bg: #040918;
+    --color-text: hsl(0, 0%, 93%);
+}
+
+.light {
+    --color-primary: hsl(227, 10%, 65%);
+    --color-secondary: hsl(200, 60%, 99%);
+    --color-bg-light: #EEF8F9;
+    --color-bg: #EBF2FC;
+    --color-text: #000000;
+}
+
 @media (width>=500px) {
 
     .container {
@@ -38,20 +54,21 @@
 }
 
 body {
-    background: linear-gradient(180deg, #040918 0%, #091540 100%);
+    background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-light) 100%);
     font-family: "Noto Sans";
 }
 
+
 .border {
-    border: 1px solid rgba(255, 255, 255, 30%)
+    border: 1px solid var(--color-primary);
 }
 
 div,
 button {
-    background-color: hsl(226, 25%, 17%);
+    background-color: var(--color-secondary);
     border-radius: 20px;
     border-color: aliceblue;
-    color: hsl(0, 0%, 93%);
+    color: var(--color-text);
     padding: 10px;
 }
 
@@ -63,11 +80,17 @@ button {
 }
 
 .logo-img {
+    background-image: url("logo.svg");
     filter: invert(1);
 }
 
+.light .logo-img {
+    filter: invert(0);
+}
+
+
 .sun-div {
-    background-color: hsl(225, 23%, 24%);
+    background-color: var(--color-primary);
     border-radius: 10px;
     justify-content: center;
 }
@@ -77,7 +100,7 @@ button {
     background-color: transparent;
     font-size: 25px;
     background-color: (200, 60%, 99%);
-    color: hsl(0, 0%, 93%);
+    color: var(--color-text);
     margin-bottom: 0%;
     padding: 0%;
     font-weight: 600;
@@ -122,7 +145,7 @@ button {
     font-size: 12px;
     font-weight: 100px;
     margin: 0%;
-    color: hsl(0, 0%, 78%);
+    color: var(--color-text);
 }
 
 .switch {
@@ -215,4 +238,23 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+.search-div {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.submit{
+    margin: 0%;
+    padding: 3px;
+}
+
+input,
+label {
+    margin: 0.4rem 0;
+    width: 260px;
+    text-align: center;
 }
